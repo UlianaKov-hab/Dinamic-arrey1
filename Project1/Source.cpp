@@ -76,10 +76,16 @@ using namespace std;
 //	strcat_s(arr, arr2); //v pershuy masuv dopusye dryguy
 //	cout << arr << endl; 
 //}
+//void main()
+//{
+//	char arr[255]="Hi\t";
+//	char arr2[] = "123456789";
+//	strncat_s(arr, arr2,5); //v pershuy masuv dopusye 5 elementiv drugogo
+//	cout << arr << endl; 	
+//}
 void main()
 {
-	char arr[255]="Hi\t";
-	char arr2[] = "123456789";
-	strncat_s(arr, arr2,5); //v pershuy masuv dopusye 5 elementiv drugogo
-	cout << arr << endl; 
+	char arr[255];
+	cin.getline(arr, 255);
+	cout << arr << endl;
 }
