@@ -45,7 +45,7 @@ using namespace std;
 //void main()
 //{
 //	char arr[255];
-//	cin.getline(arr, 255); // by keyboard
+//	cin.getline(arr, 255); // vvid cherez keyboard
 //	/*for (size_t i = 0; arr[i] != '\0'; i++)
 //	{
 //		cout << arr[i];
@@ -88,4 +88,54 @@ void main()
 	char arr[255];
 	cin.getline(arr, 255);
 	cout << arr << endl;
+	int count_wite = 0;
+	int count_big = 0;
+	int count_smal = 0;
+	int count_symbol = 0;
+	int count_digit = 0;
+	/*for (int i = 0; i < 255; i++)
+	{
+		if (arr[i] == 0)
+		{
+			count_wite++;
+		}
+		if (arr[i] >= 65 && arr[i] <= 90)
+		{
+			count_big++;
+		}
+		if (arr[i] >= 97 && arr[i] <= 122)
+		{
+			count_smal++;
+		}
+		if (arr[i] == 33 || arr[i] == 63 || arr[i] == 46 )
+		{
+			count_symbol++;
+		}
+	}*/
+	for (int i = 0; i < strlen(arr); i++)
+	{
+		if (isspace(arr[i]))
+		{
+			count_wite++;
+		}
+		if (isupper(arr[i]))
+		{
+			count_big++;
+		}
+		if (islower(arr[i]))
+		{
+			count_smal++;
+		}
+		if (isdigit(arr[i]))
+		{
+			cout << count_digit << endl; 
+		}		
+	}
+	cout << count_wite << endl;
+	cout << count_big << endl;
+	cout << count_smal << endl;
+	cout << count_symbol << endl;
+	cout << count_digit << endl;
+
+
 }
